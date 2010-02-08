@@ -17,7 +17,7 @@
 (setq default-tab-width 4)
 
 ;; set color theme
-(color-theme-railscasts)
+;(color-theme-railscasts)
 ;;(color-theme-vivid-chalk)
 
 ;; highlight the current line

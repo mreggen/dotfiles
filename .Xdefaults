@@ -1,54 +1,86 @@
-! xterm !
-xterm*saveLines:        30000
-xterm*geometry:         120x40
+!--------------!
+!     XFT      !
+!--------------!
 
-! urxvt !
-!URxvt*termName:         rxvt-unicode
-!URxvt*termName:        rxvt-256color
-URxvt*geometry:         120x40
-URxvt*saveLines:        30000
-URxvt*visualBell:       false
-URxvt*scrollBar:        false
-URxvt*perl-lib:         /usr/lib/urxvt/perl/
-URxvt*perl-ext-common:  default,matcher
-URxvt*urlLauncher:      firefox
-URxvt*matcher.button:   1
+Xft.dpi: 96
+Xft.antialias: true
 
-! Colors
-URxvt*background:       #222222
-URxvt*cursorColor:      green
-URxvt*foreground: #babdb6
-! Black (not tango) + DarkGrey
-URxvt*color0: #000000
-URxvt*color8: #555753
-! DarkRed + Red
-URxvt*color1: #ff6565
-URxvt*color9: #ff8d8d
-! DarkGreen + Green
-URxvt*color2: #93d44f
-URxvt*color10: #c8e7a8
-! DarkYellow + Yellow
-URxvt*color3: #eab93d
-URxvt*color11: #ffc123
-! DarkBlue + Blue
-URxvt*color4: #204a87
-URxvt*color12: #3465a4
-! DarkMangenta + Mangenta
-URxvt*color5: #ce5c00
-URxvt*color13: #f57900
-!DarkCyan + Cyan (both not tango)
-URxvt*color6: #89b6e2
-URxvt*color14: #46a4ff
-! LightGrey + White
-URxvt*color7: #cccccc
-URxvt*color15: #ffffff
+!--------------!
+!    URxvt     !
+!--------------!
 
+!--[term name]--!
+URxvt*termName: rxvt-256color
+!URxvt*termName: rxvt-unicode
 
-! Fonts
-URxvt*font: xft:Droid Sans Mono:size=11
-URxvt*boldFont: xft:Droid Sans Mono:size=11
+!--[trans and fg/bg]--!
+URxvt*fadeColor: black
+URxvt*transparent: false
+URxvt*shading: 80
+URxvt*fading: 10
+URxvt*depth: 24
+URxvt*background: #1C1C1C
+URxvt*foreground: #C4C4C4
+URxvt*borderless: 1
 
-! Emacs
-emacs.FontBackend: xft
-emacs.verticalScrollBars: off
-Emacs*Font: Droid Sans Mono-9:antialias=True
+!--[font]--!
+urxvt*font: xft:Inconsolata
+urxvt*boldFont: xft:Inconsolata
+!URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-u
+!URxvt*boldFont: -*-terminus-bold-*-*-*-12-*-*-*-*-*-*-u
+!URxvt*font:           xft:DejaVu Sans Mono:pixelsize=8:autohint=true
+!URxvt*boldFont:       xft:DejaVu Sans Mono:pixelsize=8:bold:autohint=true
+!URxvt*italicFont:     xft:DejaVu Sans Mono:pixelsize=8:italic:autohint=true 
+!URxvt*boldItalicFont: xft:DejaVu Sans Mono:pixelsize=8:bold:italic:autohint=true
+
+!--[scrolling]--!
+URxvt*scrollBar: false
+URxvt*saveLines: 10000
+URxvt*scrollStyle: plain
+URxvt*mouseWheelScrollPage: false
+
+!--[tabs]--!
+URxvt*perl-ext-common: default,tabbed
+
+!--[cursor]--!
+URxvt*cursorBlink: false
+
+!--[URL handling]--!
+urxvt*perl-ext: default,matcher
+urxvt*urlLauncher: google-chrome
+urxvt*matcher.Button:3 
+
+!--[Colours]--!
+URxvt*cursorColor: #FFAF00
+
+! black
+!URxvt*color0:  #000000
+!URxvt*color8:  #808080
+
+! red
+!URxvt*color1:  #A36666
+!URxvt*color9:  #D78787
+
+! green
+!URxvt*color2:  #429942
+!URxvt*color10: #87D787
+
+! yelow
+!URxvt*color3:  #D7AF87
+!URxvt*color11: #FFFFAF
+
+! blue
+!URxvt*color4:  #AFAFD7
+!URxvt*color12: #AFD7FF
+
+! magenta
+!URxvt*color5:  #A872A8
+!URxvt*color13: #D7AFD7
+
+! cyan
+!URxvt*color6:  #00A8AB
+!URxvt*color14: #00C8CC
+
+! white
+!URxvt*color7:  #D0D0D0
+!URxvt*color15: #EFEFEF
